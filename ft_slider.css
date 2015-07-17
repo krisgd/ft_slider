@@ -1,0 +1,75 @@
+/**
+ * @Kris Doromal
+ */
+
+html, body{
+	margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    width: 100%;
+}
+
+/* Utility
+=========================
+*/
+.cf{}
+
+.cf::after{
+    content: "";
+    clear: both;
+}
+
+/* ft slider
+=========================
+*/
+#ft-slider{
+    margin: 20px auto;
+    width: 100%;
+    max-width: 640px;
+    height: auto;
+    position: relative;
+}
+
+#ft-slider img{
+    display: block; /*removes extra space at the bottom that appears if left as inline*/
+    height: auto;
+    width: 100%;
+}
+
+
+/* ft slider menu
+=========================
+*/
+.ft-slider-menu{
+    width: auto; 
+    height: auto; 
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.ft-slider-menu>ul{ 
+    list-style: none; 
+    margin: 0 auto;
+}
+
+.ft-menu-item{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    margin: 4px;
+}
+
+.ft-unselected{
+    border: 1px solid #8b8b8b;
+}
+
+.ft-unselected:hover{
+    background: #ccc;
+    cursor: pointer;
+}
+
+.ft-selected{
+    background-color: #6f6f6f;
+    border: 1px solid #2a2a2a;
+}
